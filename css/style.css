@@ -158,8 +158,7 @@ section.success {
     -webkit-filter: grayscale(1);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: url(#greyscale);
-    filter: gray
+    filter: gray;
 }
 @media(max-width:767px){section{padding:75px 0
 }
