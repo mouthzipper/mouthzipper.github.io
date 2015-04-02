@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
-    color: #fff;
-    background-color: #000
+    color: #000;
+    background-color: whitesmoke;
 }
 html {
     font-family: sans-serif
@@ -36,13 +36,6 @@ hr.star-primary {
     border: 0;
     border-top: solid 5px;
     text-align: center
-}
-hr.star-light {
-    border-color: #fff
-}
-hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c
 }
 hr.star-primary {
     border-color: #2c3e50
@@ -153,12 +146,13 @@ section h2 {
     font-size: 3em
 }
 section.success {
-    color: #fff;
+    color: #000;
     background: grayscale;
     -webkit-filter: grayscale(1);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
+    text-align: center;
 }
 @media(max-width:767px){section{padding:75px 0
 }
@@ -250,7 +244,8 @@ footer .footer-col {
 }
 footer .footer-below {
     padding:25px 0;
-    background-color:#233140
+    background-color:black;
+    color:white;
 }
 .btn-social {
     display:inline-block;
