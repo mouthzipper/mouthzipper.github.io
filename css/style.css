@@ -1,7 +1,11 @@
 body {
     overflow-x: hidden;
-    color: #000;
+    color: #555 !important;
     background-color: whitesmoke;
+    font-family: Roboto, sans-serif
+    font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: .2px;
 }
 html {
     font-family: sans-serif
@@ -12,14 +16,7 @@ p {
 p.small {
     font-size: 16px
 }
-a,
-a.active,
-a:active,
-a:focus,
-a:hover {
-    outline: 0;
-    color: #18bc9c
-}
+
 h1,
 h2,
 h3,
@@ -59,10 +56,6 @@ header {
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
-    -webkit-filter: grayscale(1);
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;
 }
 header .container {
     padding-top: 100px;
@@ -106,8 +99,17 @@ header .intro-text .skills {
 }
 .navbar-fixed-top.navbar-shrink {
     padding: 0;
-    background-color: #000!important;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
+    background-color: white!important;
+    border-bottom: 2px solid #d9d9d9;
+  position: fixed;
+  z-index: 11;
+  -webkit-animation: show-header 1s;
+}
+.navbar-shrink .navbar-brand {
+    color : #18bc9c !important;
+}
+.navbar-shrink .navbar-nav>li>a {
+    color : #555 !important;
 }
 .navbar-fixed-top.navbar-shrink .navbar-brand {
     font-size: 1.5em
@@ -122,12 +124,7 @@ header .intro-text .skills {
 .navbar .navbar-nav {
     letter-spacing: 1px
 }
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
-    outline: 0;
-    color: rgba(255, 255, 255, .8);
-    background-color: transparent
-}
+
 .navbar-default,
 .navbar-inverse {
     border: 0
@@ -136,8 +133,10 @@ header .intro-text .skills {
     background-color: transparent!important
 }
 .navbar-default .navbar-nav>.active>a {
-    background-color: rgba(255, 255, 255, .3)!important
+    background-color: #18bc9c !important
 }
+
+
 section {
     padding: 100px 0
 }
@@ -146,13 +145,9 @@ section h2 {
     font-size: 3em
 }
 section.success {
-    color: #000;
-    background: grayscale;
-    -webkit-filter: grayscale(1);
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;
+    color: #555;
     text-align: center;
+    background-color: white !important;
 }
 @media(max-width:767px){section{padding:75px 0
 }
