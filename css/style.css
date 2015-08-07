@@ -135,6 +135,11 @@ header .intro-text .skills {
 .navbar-default .navbar-nav>.active>a {
     background-color: #18bc9c !important
 }
+@media ( max-width: 767px ) {
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: black;
+    }
+}
 
 
 section {
